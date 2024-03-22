@@ -9,11 +9,11 @@ from keras_facenet import FaceNet
 import pickle
 import os
 from tensorflow.keras.models import load_model
-from GUISwitchCreations import SwitchCreations
-from GUILabelCreations import LabelCreations
-from GUIFrameCreations import FrameCreations
-from GUIImageLoader import ImageLoader
-from GUIButtonCreations import ButtonCreations
+from new_GUISwitchCreations import SwitchCreations
+from new_GUILabelCreations import LabelCreations
+from new_GUIFrameCreations import FrameCreations
+from new_GUIImageLoader import ImageLoader
+from new_GUIButtonCreations import ButtonCreations
 
 
 
