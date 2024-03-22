@@ -21,7 +21,7 @@ myFile.close()
 cap = cv2.VideoCapture(0)
 cTime, pTime = 0, 0
 
-model = load_model("Face Mask Detection Model.h5")
+model = load_model(r"Machine Learning models\Face Mask Detection Model.h5")
 
 
 while True:

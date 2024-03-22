@@ -11,7 +11,7 @@ facenet = FaceNet()
 faceDetector = mp.solutions.face_detection
 faceDetection = faceDetector.FaceDetection()
 
-imgFolder = "D:\Secured Home\SecuredHome\Project Files\ImageDatabase"
+imgFolder = r"C:\User Files\Projects\New folder\pythonProject\Secured-Home\ImageDatabase"
 signatureDatabase = {}
 
 for filename in os.listdir(imgFolder):

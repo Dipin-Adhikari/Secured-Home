@@ -6,7 +6,7 @@ import time
 
 
 cap = cv2.VideoCapture(0)
-model = load_model("D:\Secured Home\SecuredHome\Project Files\Face Mask Detection Model.h5")
+model = load_model(r"Machine Learning models\Face Mask Detection Model.h5")
 faceDetector = mp.solutions.face_detection
 faceDetection = faceDetector.FaceDetection()
 categories = {0: 'Mask', 1: 'No Mask'}
@@ -24,6 +24,8 @@ while True:
             cv2.rectangle(img, (bbox[0], bbox[1]), (bbox[0] + bbox[2], bbox[1] + bbox[3]), (0, 255, 0))
 
             face = imgRgb[bbox[1]:bbox[1]+bbox[3], bbox[0]:bbox[0]+bbox[2]]
+
+
             face = cv2.resize(face, (224, 224))
             imgA = np.asarray(face)
             nImgA = (imgA.astype(np.float32) / 127 -1)
